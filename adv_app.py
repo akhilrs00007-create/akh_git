@@ -4,7 +4,7 @@ import numpy as np
 
 # Load the saved model
 with open('linear_reg.sav', 'rb') as f:
-    model = pickle.Unpickler(f).load()
+    model = pickle.load(f)
 
 st.title('Sales Prediction App')
 
